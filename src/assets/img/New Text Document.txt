@@ -1,0 +1,54 @@
+import { Box, Stack, Typography } from "@mui/material";
+import Paper from "@mui/material/Paper";
+import Button from "../../../Ui/Button";
+import Grid from "@mui/material/Grid";
+import img1 from '../../../assets/img/img1.png'
+const Firstsec = () => {
+  return (
+    <Stack direction={"row"} gap={2} width={"100%"}>
+      <Grid container spacing={2} wrap="wrap">
+        <Grid item xs={12} sm={6}>
+          <Paper sx={{ width: "100%", p: 2 }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+              }}
+            >
+              <Typography variant="h5" mb={1}>
+                Congratulaton Moaz ❤
+              </Typography>
+              <Typography variant="p" mb={1}>
+                You have done 72% more sales today. Check your new badge in your
+                profile.
+              </Typography>
+              <Button styles={"bg-red-400"}>Moaz karem</Button>
+            </Box>
+            <img src={img1} alt="image" />
+          </Paper>
+        </Grid>
+
+        <Grid item xs={12} sm={3}>
+          <Paper sx={{ width: "100%", p: 2 }}>
+            <Typography variant="p" mb={1}>
+              You have done 72% more sales today. Check your new badge in your
+              profile.
+            </Typography>
+          </Paper>
+        </Grid>
+
+        <Grid item xs={12} sm={3}>
+          <Paper sx={{ width: "100%", p: 2 }}>
+            <Typography variant="p" mb={1}>
+              You have done 72% more sales today. Check your new badge in your
+              profile.
+            </Typography>
+          </Paper>
+        </Grid>
+      </Grid>
+    </Stack>
+  );
+};
+
+export default Firstsec;
